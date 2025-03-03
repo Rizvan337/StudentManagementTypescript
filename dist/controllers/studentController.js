@@ -11,10 +11,11 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.deleteStudent = exports.updateStudent = exports.createStudent = exports.getStudentById = exports.getStudents = void 0;
 const studentModel_1 = require("../models/studentModel");
+const studentServices_1 = require("../services/studentServices");
 // Get All Students
 const getStudents = (req, res) => __awaiter(void 0, void 0, void 0, function* () {
     try {
-        const students = yield studentModel_1.Student.find();
+        const students = yield studentServices_1.studentService.getAllStudents();
         res.json(students);
     }
     catch (err) {

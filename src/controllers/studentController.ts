@@ -1,10 +1,11 @@
 import { Request, Response } from 'express';
 import { Student } from '../models/studentModel';
+import { studentService } from '../services/studentServices';
 
 // Get All Students
 export const getStudents = async (req: Request, res: Response) => {
   try {
-    const students = await Student.find();
+    const students = await studentService.getAllStudents();
     res.json(students);
   } catch (err) {
     res.status(500).json({ error: "Server Error" });
