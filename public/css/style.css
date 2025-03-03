@@ -1,0 +1,151 @@
+/* Global Styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: #9bc7e4;
+    color: #333;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Header */
+h1 {
+    font-size: 2rem;
+    color: #222;
+    margin-bottom: 15px;
+}
+
+/* Form Styling */
+form {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    width: 400px;
+    margin: 0 auto 20px;
+    text-align: left;
+}
+
+form input {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+    outline: none;
+}
+
+form input:focus {
+    border-color: #007bff;
+}
+
+/* Buttons */
+button {
+    padding: 12px 15px;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+button:hover {
+    opacity: 0.9;
+}
+
+/* Add Student Button */
+button[type="submit"] {
+    background: #007bff;
+    color: white;
+    width: 100%;
+}
+
+button[type="submit"].edit-mode {
+    background: #28a745;
+}
+
+/* Edit & Delete Buttons */
+.edit-btn {
+    background: #ffc107;
+    color: black;
+    padding: 8px 12px;
+    margin-right: 5px;
+}
+
+.delete-btn {
+    background: #dc3545;
+    color: white;
+    padding: 8px 12px;
+}
+
+/* Student List Table */
+table {
+    width: 80%;
+    max-width: 900px;
+    margin: 20px auto;
+    border-collapse: collapse;
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+th, td {
+    padding: 12px;
+    border-bottom: 1px solid #ddd;
+    text-align: center;
+}
+
+th {
+    background: #007bff;
+    color: white;
+    text-transform: uppercase;
+}
+
+/* Pagination */
+.pagination {
+    margin-top: 20px;
+}
+
+.pagination button {
+    background: #eef0f3;
+    border: none;
+    color: white;
+    padding: 10px 15px;
+    margin: 5px;
+    font-weight: bold;
+}
+
+.pagination button:hover {
+    background: #0056b3;
+}
+
+/* Confirmation Modal */
+.modal {
+    display: none;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    z-index: 1000;
+}
+
+.modal p {
+    margin-bottom: 15px;
+}
+
+.modal button {
+    margin: 5px;
+}

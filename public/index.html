@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Management</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script> 
+</head>
+<body>
+    <h1>Student Management</h1>
+
+    <form id="studentForm">
+        <input type="text" id="name" placeholder="Name" required>
+        <input type="number" id="age" placeholder="Age" required>
+        <input type="email" id="email" placeholder="Email" required>
+        <input type="text" id="course" placeholder="Course" required>
+        <button type="submit">Add Student</button>
+    </form>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Age</th>
+                <th>Email</th>
+                <th>Course</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody id="studentList"></tbody>
+    </table>
+
+    <div class="pagination">
+        <button id="prevPage">⏪ Prev</button>
+        <span id="pageInfo"></span>
+        <button id="nextPage">Next ⏩</button>
+    </div>
+
+    <script src="/js/app.js" defer></script>
+</body>
+</html>
